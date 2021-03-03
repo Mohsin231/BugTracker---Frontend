@@ -1,8 +1,9 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Dashboard from './components/dashboard';
-import Sidebar from './views/sidebar';
-import ViewBugs from './views/viewBugs';
+import Sidebar from './components/sidebar';
+import ViewBugs from './components/viewBugs';
+import CreateBug from './components/createBug'
 
 function App() {
   return (
@@ -16,12 +17,15 @@ function App() {
   </div>
 
   <div class="main">
-    <Dashboard/> 
-    <Switch>
+    
+    <Route path='/dashboard'> <Dashboard/> </Route>
+    
 
     <Route path='/viewbugs'><ViewBugs/></Route>
 
-    </Switch>
+    <Route path='/createbug'><CreateBug/></Route>
+
+    
     
 
   </div>

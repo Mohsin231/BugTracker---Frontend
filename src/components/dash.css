@@ -1,0 +1,20 @@
+.dashCard {
+    background-color: dodgerblue;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 220px; 
+    margin-left: 34%;
+  }
+.dashCard :hover {
+  border: 3px solid green;
+  color:blue;
+  background: #fff;
+}
+
+  .cards :hover{
+    transition: all .3s;
+    transform: scale(1.05);
+
+  }

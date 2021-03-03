@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 
 function Sidebar(props) {
     return (
-        <div cllassName = 'sidebar'>
+        <div className = 'sidebar'>
             <Link className='nav' to='/'> <h1 className="brand"> Bug Tracker</h1></Link>
             <ul>
-                <li><Link to="/viewbugs" className='nav'>DashBoard</Link></li>
+                <li><Link to="/dashboard" className='nav'>DashBoard</Link></li>
                 <li><Link to="/viewbugs" className='nav'>View Bugs</Link></li>
-                <li><Link to="/viewbugs" className='nav'>Create Bug</Link></li>
+                <li><Link to="/createbug" className='nav'>Create Bug</Link></li>
             </ul>
 
             <button className = 'logout'> LogOut</button>

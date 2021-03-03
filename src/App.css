@@ -12,14 +12,14 @@
   grid-area: side_bar;
   position: fixed;
   grid-column:1;
-  width: 25%;
+  width: 20%;
   height: 100vh;
   background-color: blue;
   text-align: center; 
 }
 .side_bar li{
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-bottom: 1px groove white;
 }
 .side_bar ul{
@@ -42,6 +42,7 @@
 .main { 
   grid-area: main;
   text-align: center;
+  padding-left: 25%;
  }
 
 
