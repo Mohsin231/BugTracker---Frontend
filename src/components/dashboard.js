@@ -1,6 +1,8 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
-import Dash from './dash.css'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import './dash.css'
+
 
 function Dashboard() {
 
@@ -23,6 +25,8 @@ function Dashboard() {
 
     let highBugs = bugs.filter(bug => bug.priority==="high")
     let high = highBugs.length
+
+
 
 
 

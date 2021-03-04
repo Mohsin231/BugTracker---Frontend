@@ -1,3 +1,35 @@
 ul {
     list-style: none;
 }
+
+
+li {
+    
+    padding-bottom: 5%;
+    
+}
+
+
+input, textarea {
+    
+    padding:10px;
+    padding-left: 100px;
+    border-radius:10px;
+    width: 50%;
+
+      
+}
+
+label {
+    padding-right: 40px;
+    padding-top: 75px;
+    font-size: 25px;
+}
+
+button {
+  width: 50%;
+  height: 50px;
+  font-size: 1.5rem;
+  color: white;
+  background-color:green;
+}

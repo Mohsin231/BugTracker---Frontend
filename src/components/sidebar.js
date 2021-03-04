@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Sidebar(props) {
     return (
         <div className = 'sidebar'>
-            <Link className='nav' to='/'> <h1 className="brand"> Bug Tracker</h1></Link>
+            <Link className='nav' to='/'> <h1 className="title"> Bug Tracker</h1></Link>
             <ul>
                 <li><Link to="/dashboard" className='nav'>DashBoard</Link></li>
                 <li><Link to="/viewbugs" className='nav'>View Bugs</Link></li>

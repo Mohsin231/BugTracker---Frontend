@@ -5,17 +5,6 @@ import './createBug.css'
 
 function CreateBug(props) {
 
-    const [bugs,setBugs] = useState([])
-    
-    useEffect(() => {
-        const url = 'https://bug-tracker-apii.herokuapp.com/bugs/'
-        fetch(url)
-        .then(res => res.json())
-        .then(res => setBugs(res))
-        .catch(error => console.log("error"))
-
-}, [])
-
     const [bug, setBug] = useState({
         name : "",
         priority : "",
@@ -27,11 +16,11 @@ function CreateBug(props) {
     
     })
 
-    function insertBugAPI(body){
+    function insertBugAPI(){
         
         const url = 'https://bug-tracker-apii.herokuapp.com/bugs/'
         let headers = {
-            'Content-Type': 'Application/JSON'
+            'Content-Type': 'application/json'
         }
         try {
             let test = axios.post(url, bug, {headers:headers})
@@ -43,19 +32,12 @@ function CreateBug(props) {
         }
         
 
-       
-
-
-        
-
     }
 
     const insertBug = (event) => {
         setBug({...bug, [event.target.id]: event.target.value})
         
     }
-
-
 
     return (
     <div>

@@ -8,6 +8,7 @@
     "side_bar main"
     "side_bar main";
 }
+
 .side_bar { 
   grid-area: side_bar;
   position: fixed;
@@ -20,7 +21,8 @@
 .side_bar li{
   padding: 10px;
   font-size: 2rem;
-  border-bottom: 1px groove white;
+  border-bottom: 3px groove white;
+  padding: 30 50px;
 }
 .side_bar ul{
   list-style: none;
