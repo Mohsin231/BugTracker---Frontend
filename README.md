@@ -1,3 +1,5 @@
+### Backend API
+>https://bug-tracker-apii.herokuapp.com/bugs/
 ### Project idea 
 >Bug Tracker is an application that helps teams solve bugs more efficiently. It's an application where user can create a project and add their team members in it. If there are any bugs, any team member can create and post a bug so all of their team members can see it. Details about the bug include: name, priority, details, steps, operating system, assignee.
 
